@@ -12,6 +12,18 @@ streamlit_style = """
     html, body, [class*="css"]  {
         font-family: 'Poppins', sans-serif;
     }
+    footer {
+        visibility: hidden
+    }
+    footer:after {
+	    content:'Made by Saish'; 
+	    visibility: visible;
+	    display: block;
+	    position: relative;
+	    #background-color: red;
+	    padding: 2px;
+	    top: 2px;
+    }
 </style>
 """
 st.markdown(streamlit_style, unsafe_allow_html=True)
